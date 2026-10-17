@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yash Metha | Professional ePortfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #1e3a8a;
+            --primary-light: #3b82f6;
+            --accent: #0f766e;
+            --bg-color: #f8fafc;
+            --text-color: #334155;
+            --card-bg: #ffffff;
+            --border-color: #e2e8f0;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        body { background-color: var(--bg-color); color: var(--text-color); line-height: 1.6; }
+        
+        /* Header / Navbar */
+        header { position: fixed; top: 0; left: 0; width: 100%; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); box-shadow: 0 1px 3px rgba(0,0,0,0.1); z-index: 1000; }
+        .nav-container { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 1.2rem 2rem; }
+        .logo { font-size: 1.25rem; font-weight: 700; color: var(--primary); text-decoration: none; }
+        nav ul { display: flex; list-style: none; gap: 2rem; }
+        nav ul li a { text-decoration: none; color: var(--text-color); font-weight: 500; transition: color 0.3s; }
+        nav ul li a:hover { color: var(--primary-light); }
+
+        /* Hero Section */
+        .hero { padding: 9rem 2rem 5rem; background: linear-gradient(135deg, #1e3a8a 0%, #0f766e 100%); color: white; text-align: center; }
+        .hero-content { max-width: 800px; margin: 0 auto; }
+        .hero h1 { font-size: 3rem; font-weight: 700; margin-bottom: 1rem; }
+        .hero p { font-size: 1.2rem; opacity: 0.9; margin-bottom: 2rem; }
+        .btn { display: inline-block; background: white; color: var(--primary); padding: 0.75rem 1.75rem; border-radius: 50px; font-weight: 600; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s, background 0.2s; }
+        .btn:hover { transform: translateY(-2px); background: #f1f5f9; }
+
+        /* Main Sections */
+        section { max-width: 1200px; margin: 0 auto; padding: 5rem 2rem 3rem; }
+        .section-title { font-size: 2.25rem; color: var(--primary); margin-bottom: 1.5rem; font-weight: 700; text-align: center; position: relative; }
+        .section-title::after { content: ''; display: block; width: 60px; height: 4px; background: var(--accent); margin: 0.5rem auto 0; border-radius: 2px; }
+        
+        .card { background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; margin-bottom: 2rem; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); }
+        
+        /* Grid layouts */
+        .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        
+        /* Typography & Content styling */
+        h3 { color: var(--primary); margin-bottom: 1rem; font-size: 1.5rem; }
+        p { margin-bottom: 1rem; }
+        ul { margin-left: 1.5rem; margin-bottom: 1rem; }
+        li { margin-bottom: 0.5rem; }
+
+        .journal-card { background: white; border-left: 4px solid var(--primary-light); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 0 8px 8px 0; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        
+        /* Footer */
+        footer { background: #0f172a; color: white; text-align: center; padding: 3rem 2rem; margin-top: 4rem; }
+        
+        @media(max-width: 768px) {
+            nav ul { display: none; }
+            .hero h1 { font-size: 2.25rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo">Yash Metha</a>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Project Work</a></li>
+                    <li><a href="#development">Professional Development</a></li>
+                    <li><a href="#reflections">Reflective Journals</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Professional ePortfolio</h1>
+            <p>Welcome to my professional showcase. I am Yash Metha, an ambitious business student dedicated to excellence in digital-age management, systems thinking, and ethical business leadership.</p>
+            <a href="#about" class="btn">Explore Portfolio</a>
+        </div>
+    </section>
+
+    <!-- SECTION 1: BIOGRAPHICAL -->
+    <section id="about">
+        <h2 class="section-title">Biographical & Self-Evaluation</h2>
+        <div class="card">
+            <h3>Personal Introduction & Career Aspirations</h3>
+            <p>My name is Yash Metha. I am currently pursuing my tertiary qualifications at Massey University and ICL Graduate Business School, specializing in business professionalism and management. My career aspiration is to secure a dynamic leadership role in business operations and project management where I can apply robust systems theory, navigate complex global business ecosystems, and foster sustainable organizational growth.</p>
+            
+            <h3 style="margin-top: 2rem;">Self-Evaluation (Whetten & Cameron Framework)</h3>
+            <p>Utilizing the Whetten and Cameron self-assessment framework (Chapter 1), I have evaluated my core management competencies:</p>
+            <ul>
+                <li><strong>Strengths:</strong> Strong interpersonal communication, active collaboration, empathy in team environments, and a structured approach to problem-solving in digital business settings.</li>
+                <li><strong>Areas for Development:</strong> Delegating complex operational tasks under tight deadlines, managing strategic organizational risks, and advancing advanced quantitative risk analysis. My developmental plan focuses on targeted skill acquisition and active leadership mentoring.</li>
+            </ul>
+
+            <h3 style="margin-top: 2rem;">Professional Links & Contact</h3>
+            <p>Connect with me on professional networks:</p>
+            <p><a href="https://www.linkedin.com" target="_blank" style="color: var(--primary-light); font-weight: 600;"><i class="fab fa-linkedin"></i> View LinkedIn Profile</a></p>
+        </div>
+    </section>
+
+    <!-- SECTION 2: PROJECT WORK -->
+    <section id="projects">
+        <h2 class="section-title">Project Work</h2>
+        <div class="card">
+            <h3>Business Ecosystem & Systems Theory Project</h3>
+            <p><strong>Context & Challenge:</strong> Modern enterprises operate in highly disrupted environments characterized by rapid digital transformation, strict privacy regulations, and shifting stakeholder expectations. The challenge was to analyze a real-world enterprise ecosystem and design a resilient strategic response.</p>
+            <p><strong>Objectives & Goals:</strong> To evaluate business professionalism through a systems theory lens, examining corporate reputation, intellectual property protection, and stakeholder relationship management.</p>
+            <p><strong>My Role & Approach:</strong> I led the research and strategic synthesis phases, evaluating organizational culture, ethical surveillance compliance, and digital footprint management. I utilized systems mapping to identify feedback loops between internal corporate climate and external stakeholder trust.</p>
+            <p><strong>Outcomes:</strong> The project delivered an actionable management framework demonstrating how organizations can align ethical compliance with sustainable competitive advantage in disrupted markets.</p>
+        </div>
+    </section>
+
+    <!-- SECTION 3: PROFESSIONAL DEVELOPMENT -->
+    <section id="development">
+        <h2 class="section-title">Professional Development & CV</h2>
+        <div class="card">
+            <h3>Personal & Professional Learning Goals (PPLGs)</h3>
+            <div class="grid-2">
+                <div>
+                    <h4>Personal Learning Goals</h4>
+                    <ul>
+                        <li>Enhance cross-cultural communication and negotiation skills.</li>
+                        <li>Master advanced project management software and agile methodologies.</li>
+                        <li>Deepen expertise in digital ethics and privacy legislation.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Professional Learning Goals</h4>
+                    <ul>
+                        <li>Secure a graduate management or operations role in New Zealand.</li>
+                        <li>Expand professional network through industry events and career expos.</li>
+                        <li>Contribute to sustainable business consulting initiatives.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 2rem;">Curriculum Vitae (New Zealand Format)</h3>
+            <p>My CV is meticulously formatted to meet New Zealand professional recruitment standards, highlighting academic achievements at Massey University / ICL, practical competencies, and career readiness.</p>
+            <a href="#contact" class="btn">Request Full CV PDF</a>
+        </div>
+    </section>
+
+    <!-- SECTION 4: REFLECTIVE LEARNING -->
+    <section id="reflections">
+        <h2 class="section-title">Reflective Learning Journals</h2>
+        
+        <div class="journal-card">
+            <h3>Journal 1: Business Professionalism in the Digital Age</h3>
+            <p><strong>Learning & Acquisition:</strong> Explored how digital transformation redefines professional conduct, accountability, and transparency. Learned to apply systems thinking to organizational challenges.</p>
+            <p><strong>Usefulness:</strong> Crucial for understanding how digital footprints and online reputation directly impact long-term corporate viability and personal career credibility.</p>
+            <p><strong>Real-world Application:</strong> Applying professional social media curation and maintaining rigorous ethical standards across academic and professional communications.</p>
+        </div>
+
+        <div class="journal-card">
+            <h3>Journal 2: Systems Theory & Organizational Ecosystems</h3>
+            <p><strong>Learning & Acquisition:</strong> Examined how interdependent business elements (culture, climate, stakeholders, and regulation) interact dynamically rather than in isolation.</p>
+            <p><strong>Usefulness:</strong> Provided a holistic lens to diagnose operational bottlenecks and anticipate ripple effects of managerial decisions.</p>
+            <p><strong>Real-world Application:</strong> Utilized in group project strategic planning to map stakeholder influence and manage organizational change effectively.</p>
+        </div>
+
+        <div class="journal-card">
+            <h3>Journal 3: Ethics, Privacy, and Surveillance in Modern Business</h3>
+            <p><strong>Learning & Acquisition:</strong> Investigated data privacy laws, employee surveillance ethics, and the balance between security and individual liberty.</p>
+            <p><strong>Usefulness:</strong> Raised awareness of legal compliance and moral responsibilities when handling proprietary and personal data.</p>
+            <p><strong>Real-world Application:</strong> Implemented strict data governance and privacy protocols in academic research projects.</p>
+        </div>
+
+        <div class="journal-card">
+            <h3>Journal 4: Stakeholder Engagement and Reputation Management</h3>
+            <p><strong>Learning & Acquisition:</strong> Analyzed strategies for building trust, managing corporate reputation, and navigating public relations crises.</p>
+            <p><strong>Usefulness:</strong> Highlighted that corporate reputation is a fragile, invaluable intangible asset requiring continuous stakeholder dialogue.</p>
+            <p><strong>Real-world Application:</strong> Applied active listening and collaborative problem-solving during team presentations and workshops.</p>
+        </div>
+
+        <div class="journal-card">
+            <h3>Journal 5: Career Planning and Life Purpose Alignment</h3>
+            <p><strong>Learning & Acquisition:</strong> Reflected on personal values, strengths, and long-term career objectives in alignment with professional qualifications.</p>
+            <p><strong>Usefulness:</strong> Provided clarity and direction for post-graduation employment search in the New Zealand job market.</p>
+            <p><strong>Real-world Application:</strong> Developed actionable short- and medium-term career milestones and networking strategies.</p>
+        </div>
+
+        <div class="journal-card" style="border-left-color: var(--accent);">
+            <h3>Peer Evaluation Reflection</h3>
+            <p><strong>Feedback Summary:</strong> Received constructive feedback from peers regarding team collaboration, presentation delivery, and active participation during group workshops.</p>
+            <p><strong>Reflection & Growth:</strong> Peers noted strong foundational contributions and positive engagement, while suggesting more assertive vocal projection during presentations and more structured task delegation.</p>
+            <p><strong>Actions Taken:</strong> Enrolled in public speaking practice sessions, adopted structured agile task allocation frameworks for team projects, and successfully enhanced presentation confidence.</p>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <h2 class="section-title">Contact & Networking</h2>
+        <div class="card" style="text-align: center;">
+            <h3>Get in Touch</h3>
+            <p>I am actively seeking networking opportunities, professional collaborations, and graduate career opportunities in New Zealand.</p>
+            <p><strong>Email:</strong> yash.metha@student.icl.ac.nz / contact@yashmetha.nz</p>
+            <p><strong>Location:</strong> Auckland, New Zealand</p>
+            <div style="margin-top: 1.5rem;">
+                <a href="mailto:yash.metha@student.icl.ac.nz" class="btn">Send Email</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Yash Metha. All rights reserved. | Built for ICL Business Professionalism ePortfolio Assessment.</p>
+    </footer>
+
+</body>
+</html>
